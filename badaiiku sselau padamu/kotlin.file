@@ -1,0 +1,18 @@
+package com.example.oopkotlin
+
+open class Siswa(val nama : String, protected val berat : Float) {
+    fun info(){
+        println("nama : $nama" +
+                "berat : $berat")
+    }
+
+}
+class SiswaIdn(nama: String,
+               berat: Float,
+               val jenis : String,
+               val asal : String) : Siswa("nama",berat)
+
+fun main() {
+    val pelajar = SiswaIdn("paig", 10.0F,"man","home")
+    println(pelajar)
+}
