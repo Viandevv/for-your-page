@@ -1,0 +1,19 @@
+package com.example.oopkotlin
+
+class mahasiswa {
+    private var nama = String()
+    fun setNama(nama:String) {
+        this.nama = nama
+    }
+    fun getNama(): String = nama
+}
+
+
+fun main() {
+    val mhs = mahasiswa()
+    mhs.setNama("Dimas")
+
+    println("haii....,saya${mhs.getNama()}")
+    println("salam kenal...")
+
+}
